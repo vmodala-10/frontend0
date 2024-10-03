@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* added gap property to add space between elements */
+}
+
+.search-bar input[type="search"] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    width: 200px;
+}
+
+.search-bar button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-right: 10px; /* added margin-right to add space between button and dropdown */
+}
+
+.search-bar select {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.search-bar input[type="search"] {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    width: 200px;
+}
+
+.search-bar button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.search-bar select {
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+}
+
+#profile-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#content-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-card {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    width: 300px;
+}
+
+.video-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.video-card .video-info {
+    padding: 1em;
+}
+
+.video-card .video-info h2 {
+    margin-top: 0;
+}
+
+.video-card .video-info p {
+    margin-bottom: 0;
+}
+
+

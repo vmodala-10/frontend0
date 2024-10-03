@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Student Profile</h1>
+        <div class="profile-details">
+            <h2>Name: <span id="name" contenteditable="false">John Doe</span></h2>
+            <h2>UID: <span id="uid" contenteditable="false">123456</span></h2>
+            <h2>Program: <span id="program" contenteditable="false">CSE (DS)</span></h2>
+            <h2>Academic Year: <span id="academic-year" contenteditable="false">2022-2023</span></h2>
+        </div>
+        <button id="edit-profile-btn">Edit Profile</button>
+        <button id="save-profile-btn" style="display: none;">Save Changes</button>
+        <br> <!-- Add a line break here -->
+        <button id="back-btn" style="display: none;">Return</button>
+    </div>
+    
+    
+    <script>
+        const editProfileBtn = document.getElementById('edit-profile-btn');
+const saveProfileBtn = document.getElementById('save-profile-btn');
+const backBtn = document.getElementById('back-btn');
+const profileDetails = document.querySelectorAll('.profile-details span');
+
+editProfileBtn.addEventListener('click', () => {
+    profileDetails.forEach(detail => {
+        detail.contentEditable = 'true';
+        detail.style.border = '1px solid #ccc';
+        detail.style.padding = '5px';
+    });
+    editProfileBtn.style.display = 'none';
+    saveProfileBtn.style.display = 'block';
+    backBtn.style.display = 'none';
+});
+
+saveProfileBtn.addEventListener('click', () => {
+    profileDetails.forEach(detail => {
+        detail.contentEditable = 'false';
+        detail.style.border = 'none';
+        detail.style.padding = '0';
+    });
+    editProfileBtn.style.display = 'block';
+    saveProfileBtn.style.display = 'none';
+    backBtn.style.display = 'block';
+});
+
+backBtn.addEventListener('click', () => {
+    window.location.href = 'first page.html';
+});
+       
+    </script>
+</body>
+</html>
