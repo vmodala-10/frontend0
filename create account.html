@@ -11,29 +11,35 @@
         <h1>DSschool Create Account</h1>
         <form id="create-account-form">
             <label for="user-type">User  Type:</label>
-            <input type="radio" id="student" name="user-type" value="student">
+            <input type="radio" id="student" name="user-type" required 
+            value="student">
             <label for="student">Student</label>
-            <input type="radio" id="faculty" name="user-type" value="faculty">
+            <input type="radio" id="faculty" name="user-type" required
+             value="faculty">
             <label for="faculty">Faculty</label><br><br>
 
             <div id="student-details">
                 <label for="username">Username:</label>
-                <input type="text" id="username" name="username" pattern="[a-zA-Z0-9]+"><br><br>
+                <input type="text" id="username" name="username" required
+                 pattern="[a-zA-Z0-9]+"><br><br>
                 <label for="uid">UID:</label>
-                <input type="number" id="uid" name="uid" pattern="[a-zA-Z0-9]+"><br><br>
+                <input type="number" id="uid" name="uid" required
+                pattern="[a-zA-Z0-9]+"><br><br>
                 <label for="academic-year">Academic Year:</label>
-                <input type="number" id="academic-year" name="academic-year" pattern="[a-zA-Z0-9]+"> <br><br>
+                <input type="number" id="academic-year" name="academic-year"required
+                 pattern="[a-zA-Z0-9]+"> <br><br>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" ><br><br>
+                <input type="password" id="password" name="password"required
+                 pattern="[a-zA-Z0-9]+" ><br><br>
             </div>
 
             <div id="faculty-details">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="name" name="name" required><br><br>
                 <label for="course">Course:</label>
-                <input type="text" id="course" name="course"><br><br>
+                <input type="text" id="course" name="course" required><br><br>
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
+                <input type="password" id="password" name="password" required><br><br>
             </div>
 
             <input type="submit" value="Save Details">
@@ -43,3 +49,4 @@
     </div>
 </body>
 </html>
+
